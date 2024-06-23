@@ -1,0 +1,58 @@
+Write a program to sum of even and odd elements in an array.
+
+Input Format
+
+Integer corresponds to the size of the array. Read n elements line by line
+
+Constraints
+
+1<=n<=10^7
+
+Output Format
+
+Print Odd sum Print Even sum
+
+Sample Input 0
+
+3
+31
+28
+13
+Sample Output 0
+
+44
+28
+===========================================================================================================================================================================================================
+
+
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution. */
+        int n;
+        Scanner sc = new Scanner(System.in);
+        n = sc.nextInt();
+        int a[] = new int[n];
+        for(int i =0 ;i<n;i++)
+        {
+            a[i] = sc.nextInt();
+        }
+       int Seven=0,sodd=0;
+        for(int i = 0;i<n;i++)
+        {
+            if(a[i] % 2 == 0)
+            {
+                Seven += a[i];
+                
+            }
+            else
+            {
+                sodd += a[i];
+             }
+        }
+        System.out.println(sodd+"\n"+Seven);
+    }
+}
