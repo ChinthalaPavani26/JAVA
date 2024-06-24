@@ -1,0 +1,117 @@
+The garments company Apparel wishes to open outlets at various locations. The company shortlisted several plots in these locations and wishes to select only plots that are square- shaped. Write an algorithm to help Apparel find the number of plots that it can select for its outlets.
+
+Input Format
+
+The first line of the input consists of an integer num0fMots, representing the number of plots shortlisted by the company for outlets (N). The second line consists of N space-separated integers – areal, areal, ….., areaN representing the area of the N plots selected for outlets.
+
+Constraints
+
+0 < num0fPlots < 10^6 0 < area < 10^6 0 < i < num0fPlots
+
+Output Format
+
+Print an integer representing the number of plots that will be selected for outlets.
+
+Sample Input 0
+
+8
+79 77 54 81 48 34 25 16
+Sample Output 0
+
+3
+Explanation 0
+
+The areas that are in square form are 81, 25 and 16. So, the output is 3.
+
+Sample Input 1
+
+6
+12 36 49 64 21 9
+Sample Output 1
+
+4
+Submissions: 193
+Max Score: 0
+Difficulty: Medium
+Rate This Challenge:
+
+    
+Download problem statement
+ Download sample test cases
+Suggest Edits
+Collapse
+ +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++==
+1
+import java.io.*;
+2
+import java.util.*;
+3
+​
+4
+public class Solution {
+5
+​
+6
+    public static void main(String[] args) {
+7
+        /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution. */
+8
+        int n;
+9
+        Scanner sc = new Scanner(System.in);
+10
+        n = sc.nextInt();
+11
+        int a[] = new int[n];
+12
+        for(int i = 0;i < n;i++)
+13
+        {
+14
+            a[i] = sc.nextInt();
+15
+        }
+16
+        int c= 0;
+17
+        for(int i=0 ; i < n ; i++)
+18
+        {   
+19
+            int res = (int)Math.sqrt(a[i]);
+20
+            if(a[i] == (res*res))
+21
+            {
+22
+                c++;
+23
+            }
+24
+        }
+25
+        System.out.println(c);
+26
+    }
+27
+}
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Line: 19 Col: 37
+Run Code Submit CodeUpload Code as File 
+Test against custom input
+Testcase 0
+Testcase 1
+Congratulations, you passed the sample test case.
+
+Click the Submit Code button to run your code against all the test cases.
+
+Input (stdin)
+
+8
+79 77 54 81 48 34 25 16
+Your Output (stdout)
+
+3
+Expected Output
+
+3
