@@ -1,0 +1,108 @@
+String compare 5
+Problem
+Submissions
+Leaderboard
+Discussions
+Write a program to find whether the given two strings
+
+Input Format
+
+Input consists of 2 strings.
+
+Constraints
+
+string
+
+Output Format
+
+If two strings are same, display “Strings are same”, else display “Strings are not same”.
+
+Sample Input 0
+
+java
+java
+Sample Output 0
+
+Strings are same
+Sample Input 1
+
+python
+Java
+Sample Output 1
+
+Strings are not same
+Submissions: 554
+Max Score: 0
+Difficulty: Medium
+Rate This Challenge:
+
+    
+More
+ 
+1
+import java.io.*;
+2
+import java.util.*;
+3
+​
+4
+public class Solution {
+5
+​
+6
+    public static void main(String[] args) {
+7
+        
+8
+        /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution. */
+9
+        
+10
+        Scanner sc = new Scanner(System.in);
+11
+        String s1 = sc.next();
+12
+        String s2 = sc.next();
+13
+        if(s1.equals(s2))
+14
+        {
+15
+            System.out.println("Strings are same");
+16
+        }
+17
+        else
+18
+        {
+19
+            System.out.println("Strings are not same");
+20
+        }
+21
+            
+22
+            
+23
+    }
+24
+}
+Line: 15 Col: 33
+Run Code Submit CodeUpload Code as File 
+Test against custom input
+Testcase 0
+Testcase 1
+Congratulations, you passed the sample test case.
+
+Click the Submit Code button to run your code against all the test cases.
+
+Input (stdin)
+
+java
+java
+Your Output (stdout)
+
+Strings are same
+Expected Output
+
+Strings are same
