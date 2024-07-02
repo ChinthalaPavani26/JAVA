@@ -1,0 +1,90 @@
+String concatenation 15
+Problem
+Submissions
+Leaderboard
+Discussions
+Write a program to find the concatenation of the given two strings
+
+Input Format
+
+Input consists of 2 strings.
+
+Constraints
+
+string
+
+Output Format
+
+print result string
+
+Sample Input 0
+
+Sun
+Microsystems
+Sample Output 0
+
+Sun Microsystems
+Sample Input 1
+
+Oracle
+Corporation
+Sample Output 1
+
+Oracle Corporation
+Submissions: 517
+Max Score: 0
+Difficulty: Medium
+Rate This Challenge:
+
+    
+More
+ 
+;
+1
+import java.io.*;
+2
+import java.util.*;
+3
+​
+4
+public class Solution {
+5
+​
+6
+    public static void main(String[] args) {
+7
+        /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution. */
+8
+        Scanner sc = new Scanner(System.in);
+9
+            String str1=sc.nextLine();
+10
+            String str2=sc.nextLine();
+11
+         String result = str1.concat(" ").concat(str2);
+12
+        System.out.println(result);
+13
+        }
+14
+}
+Line: 11 Col: 56
+Run Code Submit CodeUpload Code as File 
+Test against custom input
+Testcase 0
+Testcase 1
+Congratulations, you passed the sample test case.
+
+Click the Submit Code button to run your code against all the test cases.
+
+Input (stdin)
+
+Sun
+Microsystems
+Your Output (stdout)
+
+Sun Microsystems
+Expected Output
+
+Sun Microsystems
+Interview Prep | Blog | Scoring
