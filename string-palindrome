@@ -1,0 +1,110 @@
+String palindrome 29
+Problem
+Submissions
+Leaderboard
+Discussions
+Write a program to find whether the given string is a palindrome or not
+
+Input Format
+
+Read a string
+
+Constraints
+
+string
+
+Output Format
+
+If the given string is a Palindrome display “Palindrome”, else display “Not a Palindrome”.
+
+Sample Input 0
+
+madam
+Sample Output 0
+
+Palindrome
+Sample Input 1
+
+java
+Sample Output 1
+
+Not a Palindrome
+Submissions: 410
+Max Score: 0
+Difficulty: Medium
+Rate This Challenge:
+
+    
+More
+ 
+====================================================================================================================================================================================================
+1
+import java.io.*;
+2
+import java.util.*;
+3
+​
+4
+public class Solution {
+5
+​
+6
+    public static void main(String[] args) {
+7
+        /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution. */
+8
+        Scanner sc = new Scanner(System.in);
+9
+        String s = sc.nextLine();
+10
+        String s2 = "";//no space
+11
+        for(int i = s.length()-1;i>=0;i--)
+12
+        {
+13
+            s2 = s2+s.charAt(i);
+14
+            
+15
+        }
+16
+        if(s.equals(s2))
+17
+        {
+18
+            System.out.println("Palindrome");
+19
+        }        
+20
+        else
+21
+        {
+22
+            System.out.println("Not a Palindrome");
+23
+        }
+24
+    }
+25
+}
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Line: 11 Col: 23
+Run Code Submit CodeUpload Code as File 
+Test against custom input
+Testcase 0
+Testcase 1
+Congratulations, you passed the sample test case.
+
+Click the Submit Code button to run your code against all the test cases.
+
+Input (stdin)
+
+madam
+Your Output (stdout)
+
+Palindrome
+Expected Output
+
+Palindrome
+Interview Prep | Blog | Scoring | Environment | FAQ | About Us 
