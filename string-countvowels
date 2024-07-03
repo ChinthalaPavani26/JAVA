@@ -1,0 +1,62 @@
+
+1
+import java.io.*;
+2
+import java.util.*;
+3
+​
+4
+public class Solution {
+5
+​
+6
+    public static void main(String[] args) {
+7
+        /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution. */
+8
+        Scanner sc = new Scanner(System.in);
+9
+        String str = sc.nextLine();
+10
+        char ch[]  = str.toCharArray(); 
+11
+        int c = 0;
+12
+        for(int i = 0;i<ch.length;i++)
+13
+        {
+14
+            if(ch[i] == 'A'||ch[i] == 'a'||ch[i] == 'E'||ch[i] == 'e'||ch[i] == 'i'||ch[i] == 'I'||ch[i] == 'O'||ch[i] == 'o'||ch[i] == 'U'||ch[i]=='u'){
+15
+                c++;
+16
+            }
+17
+        }
+18
+        System.out.println(c);
+19
+        
+20
+                
+21
+                
+22
+                
+23
+                
+24
+                
+25
+            
+26
+        
+27
+        
+28
+        
+29
+    }
+30
+}
+Interview Prep | Blog | Scoring | Environment | FAQ | Ab
