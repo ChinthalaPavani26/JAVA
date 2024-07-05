@@ -1,0 +1,107 @@
+English School Teacher
+Problem
+Submissions
+Leaderboard
+Discussions
+An English school teacher is teaching how to build sentences for kindergarten students. She starts by teaching two words in a sentence, then 3 words and so on. The next step is that she asks the students to find which word in the sentence they have made has the maximum number of alphabets. The task here is to write program to find the longest word in each input sentence(str).
+
+Input Format
+
+Read a string
+
+Constraints
+
+string
+
+Output Format
+
+print the highest word length
+
+Sample Input 0
+
+Knowledge is the greatest gift
+Sample Output 0
+
+9
+Explanation 0
+
+Word No. of characters Knowledge 9 Is 2 The 3 Greatest 8 Gift 4
+
+Sample Input 1
+
+Java is object oriented programming language
+Sample Output 1
+
+11
+Sample Input 2
+
+11223##%%5566778899 Saturn V rocket���s  first stage carries 203,400 gallons (770,000 litres) of kerosene fuel
+Sample Output 2
+
+19
+Submissions: 98
+Max Score: 0
+Difficulty: Medium
+Rate This Challenge:
+
+    +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ 
+//here we dont the array of size 
+1
+import java.io.*;
+2
+import java.util.*;
+3
+​
+4
+public class Solution {
+5
+​
+6
+    public static void main(String[] args) {
+7
+        /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution. */
+8
+        Scanner sc = new Scanner(System.in);
+9
+        String str = sc.nextLine();//Taking the input sentence  
+10
+        String strings[] = str.split(" ");//splitting the input sentence into words
+11
+        int maxlength = 0;//After splitting initialize the maxlength to 0
+12
+        for(String word : strings)//here we dont the array of size 
+13
+        {
+14
+            if(word.length() > maxlength)
+15
+            {
+16
+                maxlength = word.length();
+17
+            }
+18
+        }
+19
+        System.out.print(maxlength);        
+20
+        
+21
+    }
+22
+}
+=============================================================================================================================================================================================================
+Line: 12 Col: 68
+Run Code Submit CodeUpload Code as File 
+Test against custom input
+Custom Testcase
+Compilation Successful
+
+Input (stdin)
+
+pav kilo
+Your Output
+
+4
+Interview
