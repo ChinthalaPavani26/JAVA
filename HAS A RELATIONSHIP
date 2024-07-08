@@ -1,0 +1,28 @@
+
+//HAS A RELATIONSHIP
+
+
+
+class A
+{
+int a =10;
+int b =20;
+}
+class B
+{
+void Show()
+{
+A obj= new A();
+System.out.println(obj.a);
+System.out.println(obj.b);
+}
+}
+class C
+{
+public static void main(String args[])
+{
+B obj1 = new B();
+obj1.Show();
+}
+}
+
